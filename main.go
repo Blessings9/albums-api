@@ -33,8 +33,6 @@ func main() {
 	router.Run("0.0.0.0:8080")
 }
 
-func Greet()
-
 func postAlbums(c *gin.Context) {
 	var newAlbum album
 
