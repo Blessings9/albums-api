@@ -3,11 +3,11 @@ pipeline{
     tools {go '1.24.2'}
     environment{
         APP_NAME = "album-api"
-        RELEASE = "1.0.0"
+        RELEASE = "1.0"
         DOCKER_USER="blessmwafu"
         DOCKER_PASS = 'dockerhub'
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
-        IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
+        IMAGE_TAG = "${RELEASE}.${BUILD_NUMBER}"
         JENKINS_API_TOKEN = credentials('JENKINS_API_TOKEN')
     
     }
