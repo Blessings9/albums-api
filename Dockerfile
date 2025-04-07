@@ -1,6 +1,5 @@
 FROM golang:1.24 AS builder
 
-ENV GODEBUG=netdns=go+v4
 
 WORKDIR /build
 
